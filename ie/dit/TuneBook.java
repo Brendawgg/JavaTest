@@ -1,3 +1,7 @@
+//Author Brendan O'Dowd - c16476404
+//Date 14-02-2018
+//LabTest 2 program to load a text file into an ArrayList
+
 package ie.dit;
 
 import java.util.ArrayList;
@@ -6,11 +10,11 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.io.BufferedReader;
 
-public class TuneBook {
+public class TuneBook implements player {
 	
 	ArrayList<Tune> tunes = new ArrayList<Tune>();
 
-	TuneBook(String title) {
+	public TuneBook(String title) {
 		
 		BufferedReader inputStream = null;
 		try {
@@ -52,12 +56,20 @@ public class TuneBook {
 			
 		public Tune findTune(String title) 
 		{
-			this.title = "dance"
+			this.title = "dance";
 			for(x = 0; x < tunes.size(); x++)
 			{
 				String check;
-				check = tunes.get(x)
+				check = tunes.get(x);
 				
+				if (check.equels("dance") != 0)
+				{
+					System.out.println("Match Found :" + check);
+				}
+				else 
+				{
+					System.out.println("Sorry no matches found..");
+				}
 			}
 	
 	

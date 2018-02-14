@@ -1,3 +1,7 @@
+//Author Brendan O'Dowd - c16476404
+//Date 14-02-2018
+//LabTest 2 program to load a text file into an ArrayList
+
 package ie.dit;
 
 public class Tune {
@@ -29,6 +33,10 @@ public class Tune {
 	
 	public void toString(int x, String title, String altTitle) {
 		
+		getX();
+		getTitle();
+		getAltTitle();
+		getNotation();
 		System.out.println( x + "," + title + "," + altTitle);
 	}
 	
